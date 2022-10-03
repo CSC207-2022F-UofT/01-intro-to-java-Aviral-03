@@ -146,8 +146,8 @@ public class Basics {
          */
         StringBuilder ret = new StringBuilder();
         String[] newString = to_split.split(" ");
-        for (int i = 0; i < newString.length; i++) {
-            ret.append(newString[i].charAt(0));
+        for (String s : newString) {
+            ret.append(s.charAt(0));
         }
         return ret.toString();
     }
